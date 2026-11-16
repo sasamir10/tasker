@@ -1,8 +1,13 @@
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+
 export default function App() {
     return (
         <>
-            <h1>Welcome to Tasker App</h1>
-            <p>Is it working or not?</p>
+            <Header />
+            <Hero />
+            <Footer />
         </>
     );
 }
