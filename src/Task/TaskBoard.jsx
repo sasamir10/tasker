@@ -16,6 +16,10 @@ export default function TaskBoard() {
 
     const [tasks, useTasks] = useState([defaultTask]);
 
+    function handleAddTask() {
+        alert("This is working");
+    }
+
     return (
         <section className="mb-20" id="tasks">
             <div className="container">
@@ -24,7 +28,7 @@ export default function TaskBoard() {
                 </div>
 
                 <div className="rounded-xl border border-[rgba(206,206,206,0.12)] bg-[#1D212B] px-6 py-8 md:px-9 md:py-16">
-                    <TaskActions />
+                    <TaskActions onAddClick={handleAddTask} />
                     <TaskList tasks={tasks} />
                 </div>
             </div>
